@@ -10,53 +10,110 @@
     />
     <title>Apuntes</title>
   </head>
-  <body>
+  <body style="padding: 50px">
+    <!--añadir estilo con css -->
     <header>
-      <ul>
-        <li><a href="index.html" target="_blank">Inicio</a></li>
-        <li><a href="videos.html" target="_blank">VideoDeProgramación</a></li>
-        <li><a href="index.html" target="_blank">EnlacesDeInteres</a></li>
+      <ul style="display: flex; justify-content: space-around; font-size: 20px">
+        <!--añadir estilo con css -->
+        <li>
+          <a href="index.html" target="_blank"><strong>Inicio</strong></a>
+        </li>
+        <li>
+          <a href="videos.html" target="_blank"
+            ><strong>VideoDeProgramación</strong></a
+          >
+        </li>
+        <li>
+          <a href="index.html" target="_blank"
+            ><strong>EnlacesDeInteres</strong></a
+          >
+        </li>
       </ul>
     </header>
-    <table style="text-align: center" width="800px" border="2">
-      <thead>
-        <tr>
-          <th>TEMARIO</th>
-          <th>DESCARGAR ARCHIVO ZIP</th>
-        </tr>
-      </thead>
-      <tr>
-        <th>Arquitectura cliente-servidor</th>
-        <td>
-          <a href="src/markdown/Architectura cliente-servidor.rar" download>
-            Pincha aqui</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <th>Configuración del entorno de trabajo</th>
-        <td>
-          <a
-            href="src/markdown/Configuración del entorno de trabajo.rar"
-            download
-          >
-            Pincha aqui</a
-          >
-        </td>
-      </tr>
+    <main style="padding: 50px">
+      <!--añadir este estilo con css -->
+      <h1 style="padding: 50px">MAR</h1>
+      <table
+        style="padding: 20px; font-size: 18px; text-align: center"
+        width="800px"
+        border="1"
+      >
+        <!--añadir este estilo con css -->
+        <thead>
+          <tr style="padding: 10px">
+            <!--añadir este estilo con css -->
+            <th colspan="2">TEMARIO</th>
+            <th>DESCARGAR ARCHIVO ZIP</th>
+          </tr>
+        </thead>
 
-      <tr>
-        <th>Git</th>
-        <td>
-          <a href="src/markdown/git.rar" download> Pincha aqui</a>
-        </td>
-      </tr>
-      <tr>
-        <th>Maquetación y marcado HTML</th>
-        <td>
-          <a href="src/markdown/HTML.rar" download> Pincha aqui</a>
-        </td>
-      </tr>
-    </table>
+        <tbody>
+          <tr>
+            <th>
+              <img
+                src="src/markdown/img/cliente-servidor.jpg"
+                width="100px"
+                alt="1."
+                title="dibujo de un servidor y un cliente [movil] "
+              />
+            </th>
+            <th>Arquitectura cliente-servidor</th>
+            <td>
+              <a href="src/markdown/Architectura cliente-servidor.rar" download>
+                Pincha aqui</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="src/markdown/img/entorno-trabajo.jpg"
+                width="100px"
+                alt="2."
+                title="dibujo de un ordenador con una terminal"
+              />
+            </th>
+            <th>Configuración del entorno de trabajo</th>
+            <td>
+              <a
+                href="src/markdown/Configuración del entorno de trabajo.rar"
+                download
+              >
+                Pincha aqui</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img
+                src="src/markdown/img/git.png"
+                width="100px"
+                alt="3."
+                title="Logo de GIT"
+              />
+            </th>
+            <th>Git</th>
+            <td>
+              <a href="src/markdown/git.rar" download> Pincha aqui</a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="src/markdown/img/maquetacion-html.png"
+                width="100px"
+                alt="4."
+                title="Estructura de una pagina html que contiene header, main`[nav, section[article, aside, aside], section[aside] y un footer]"
+              />
+            </th>
+            <th>Maquetación y marcado HTML</th>
+            <td>
+              <a href="src/markdown/HTML.rar" download> Pincha aqui</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
   </body>
 </html>

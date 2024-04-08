@@ -20,17 +20,14 @@
 
     <title>ProgrAmiga</title>
   </head>
-  <body>
-    <header>
-      <ul>
-        <li><a href="videos.html" target="_blank">VideoDeProgramación</a></li>
-        <li><a href="apuntes.html" target="_blank">ApuntesMarkdown</a></li>
-        <li><a href="#EnlacesDeInteres">EnlacesDeInteres</a></li>
-      </ul>
-    </header>
-    <main>
-      <div>
-        <h1>
+  <body style="padding: 20px">
+    <!--añadir estos estilos con css -->
+    <header style="padding: 40px">
+      <!--añadir estos estilos con css -->
+      <div style="display: flex; margin: auto">
+        <!--añadir estos estilos con css -->
+        <h1 style="display: flex; margin: auto">
+          <!--añadir estos estilos con css -->
           <img
             src="src/icons/index/icon-programiga.png"
             alt="icono dev con cara sonriente"
@@ -42,13 +39,39 @@
           />
         </h1>
       </div>
-
+      <ul
+        style="
+          font-size: 20px;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 10px;
+        "
+      >
+        <!--añadir estos estilos con css -->
+        <li>
+          <a href="videos.html" target="_blank"
+            ><strong>VideoDeProgramación </strong></a
+          >
+        </li>
+        <li>
+          <a href="apuntes.html" target="_blank"
+            ><strong>ApuntesMarkdown</strong></a
+          >
+        </li>
+        <li>
+          <a href="#EnlacesDeInteres"><strong>EnlacesDeInteres</strong></a>
+        </li>
+      </ul>
+    </header>
+    <main>
       <br />
 
       <section>
-        <h2>Aqui nos ayudamos entre todos</h2>
-
-        <p>
+        <h2 style="font-size: 30px"><u> Aqui nos ayudamos entre todos </u></h2>
+        <!--añadir estos estilos con css -->
+        <br />
+        <p style="font-size: 22px">
+          <!--añadir estos estilos con css -->
           En el mundo de la programación es importante no parar nunca de
           actualizarse y de aprender de los que más saben.<br />En mi caso, aun
           estoy aprendiendo, asi que he decidido dedicar esta página en
@@ -59,13 +82,35 @@
             width="30px"
             alt="Cara de resignación"
             title="¡ QUE PENA DOY !"
-          />
-          <br />
+          /><!--añadir estos estilos con css -->
+          <br /><br /><br />
+          En esta página encontraras en el apartado de
+          <u>"VideosDeProgramación"</u> con información de algunos de los
+          programadores a los que sigo, y de los que he aprendido bastantes
+          cosas. <br /><br />
+          También podrás encontrar <u>"ApuntesMarkdown"</u> con algunos de los
+          markdown que hice en mi Master en Dessarrollo de Apps y Programación
+          Web con
+          <a href="https://immune.institute/"> IMMUNE Technology Institute</a
+          >.<br />
+          Necesitaras un editor de código para poder verlos "bonitos", de lo
+          contrario solo se verán apuntes escritos en codigo, que dan pereza
+          leer.<br />
+          Uno de los editores que yo uso es
+          <a href="https://code.visualstudio.com/download">Visual Studio Code</a
+          >, aunque una vez te hayas descargado el archivo zip y lo hayas
+          descomprimido, con cualquier otro editor de texto podrás abrirlo.<br /><br />
+          Por ultimo está <u>"EnlacesDeInteres"</u> donde podrás encontrar
+          algunos de los enlaces donde consigo que mis páginas tengan algo de
+          animación y color. Podras encontar, iconos, fondos animados, fotos
+          ilustradas, musica y muchas cosas más si te animas a investigar en
+          profundidad los enlaces.
         </p>
       </section>
       <br />
       <br />
-      <section>
+      <section style="padding: 100px">
+        <!--añadir estos estilos con css -->
         <img
           src="src/icons/index/icons-correr.gif"
           alt="Icono corriendo"
@@ -75,17 +120,13 @@
         <br />
         <br />
       </section>
-      <div>
-        <h3>
-          Aqui te dejo alguno de los sitos donde consigo que mis páginas tengan
-          algo de animación y color.
-        </h3>
-      </div>
       <aside id="EnlacesDeInteres">
-        <table style="text-align: center" border="3">
+        <table style="margin: auto; text-align: center" border="1">
+          <!--añadir estos estilos con css -->
           <thead>
             <tr>
-              <td width="200px" colspan="2" style="font-size: 22px">
+              <td width="800px" colspan="2" style="font-size: 22px">
+                <!--añadir estos estilos con css -->
                 LINK DE ENLACE
                 <img
                   src="src/icons/index/icono-gratis.png"
@@ -108,6 +149,7 @@
                     alt="gif icono"
                     title="Pincha para ver la página de iconos"
                   />
+                  <!--agregar icono estatico y poner display none al gif, añadir :hover display none estatico y que aparezca solo el gif-->
                 </a>
               </td>
               <td>
@@ -131,6 +173,7 @@
                     alt="gif fondo animado"
                     title="Pincha para ver la página de fondos dinámicos"
                 /></a>
+                <!--agregar icono estatico y poner display none al gif, añadir :hover display none estatico y que aparezca solo el gif-->
               </td>
               <td>
                 <a
@@ -154,6 +197,7 @@
                     alt="gif iTunes"
                   />
                 </a>
+                <!--agregar icono estatico y poner display none al gif, añadir :hover display none estatico y que aparezca solo el gif-->
               </td>
               <td>
                 <a
@@ -177,6 +221,7 @@
                     width="50px"
                   />
                 </a>
+                <!--agregar icono estatico y poner display none al gif, añadir :hover display none estatico y que aparezca solo el gif-->
               </td>
               <td>
                 <a
