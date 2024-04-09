@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/formulario/form.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Manrope:wght@200..800&family=MedievalSharp&family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="formulario.css" />
+
+    <title>Tu opinión cuenta</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de recomendaciones</h1>
+    </header>
+    <main>
+      <section class="container">
+        <div>
+          Si ya has echado un vistazo a las páginas que he creado de :
+          <a href="index.html"> ProgrAmiga </a>
+          <a href="videos.html"> Videos de como aprender a programar </a>
+          <a href="apuntes.html"> Apuntes markdown </a>
+          Agradeceria que completaras este formulario con algun comentario o
+          sugerencias sobre tu opinion.
+        </div>
+      </section>
+      <form action="noserellenarestaparte.php" method="post">
+        <div class="container1">
+          <div>
+            <label for="nombre"> Nombre: </label>
+            <input id="nombre" type="text" placeholder="Introduce tu nombre" />
+          </div>
+
+          <div>
+            <label for="email"> Correo electronico: </label>
+            <input id="email" type="email" placeholder="Introduce tu email" />
+          </div>
+
+          <div>
+            <label for="apellido"> Apellidos: </label>
+            <input
+              id="apellido"
+              type="text"
+              placeholder="Introduce tu apellido"
+            />
+          </div>
+
+          <div>
+            <label for="fechaNacimiento"> Fecha de nacimiento: </label>
+            <input
+              id="fechaNacimiento"
+              type="date"
+              placeholder="Introduce tu fecha de Nacimiento"
+            />
+          </div>
+        </div>
+
+        <h3>Escribe tu opinion sobre:</h3>
+        <div class="conteiner2">
+          <div>
+            <p>¿ Cual de las 3 páginas te ha gustado menos ?</p>
+
+            <select name="pagina" id="pagina">
+              <option value="" selected>Elige una página</option>
+              <option value="">Pagina principal ProgrAmiga</option>
+              <option value="">Página con enlaces de videos</option>
+              <option value="">Página con zip Markdown</option>
+              <option value="">Todas estan bien</option>
+            </select>
+          </div>
+          <div>
+            <p>¿ Que te ha parecido la página ?</p>
+
+            <input type="radio" name="opinionCliente" id="valoracion" />
+            <label for="valoracion">
+              <img src="" alt="" /> Impresionante, de donde has salido
+              tu?</label
+            >
+            <br />
+            <input type="radio" name="opinionCliente" id="valoracion" />
+            <label for="valoracion">
+              <img src="" alt="" /> Para el nivel que tienes no esta mal, pero
+              no te relajes
+            </label>
+            <br />
+            <input type="radio" name="opinionCliente" id="valoracion" />
+            <label for="valoracion">
+              <img src="" alt="" /> Buena, aunque se puede mejorar</label
+            >
+            <br />
+            <input type="radio" name="opinionCliente" id="valoracion" />
+            <label for="valoracion">
+              <img src="" alt="" /> Da pena, sigue intentandolo anda</label
+            >
+            <br />
+          </div>
+
+          <div>
+            <p>¿ Cual de las 3 páginas te ha gustado más ?</p>
+
+            <select name="pagina" id="pagina">
+              <option value="" selected>Elige una página</option>
+              <option value="">Pagina principal ProgrAmiga</option>
+              <option value="">Página con enlaces de videos</option>
+              <option value="">Página con zip Markdown</option>
+              <option value="">Ninguna</option>
+            </select>
+          </div>
+          <div>
+            <label for="textarea">
+              Me gustaría mejorar, por favor deja tus comentarios o sugerencias
+              y las valoraremos en cuanto podamos.
+            </label>
+            <br />
+            <textarea
+              name="comentario-textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="button">
+          <button type="submit">Enviar</button>
+        </div>
+
+        <div>
+          <img src="" alt="" />
+          Muchas gracias, tu opinión cuenta !
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div>
+        <a href="https://github.com/albapanato"
+          ><img
+            src="src/formulario/github.gif"
+            alt="https://iconos8.es/icon/akG4VRhAoSii/github"
+            title="icono github"
+          /><img
+            src="src/formulario/github.png"
+            alt="https://iconos8.es/icon/akG4VRhAoSii/github"
+            title="icono github"
+          />
+        </a>
+      </div>
+      <div>
+        <a href="https://discord.com/channels/@alba144">
+          <img
+            src="src/formulario/discord.gif"
+            alt="https://iconos8.es/icons/set/discord--animated"
+            title="icono discord"
+          />
+          <img
+            src="src/formulario/discord.png"
+            alt="https://iconos8.es/icons/set/discord--animated"
+            title="icono discord"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
