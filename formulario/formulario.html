@@ -37,12 +37,22 @@
         <div class="container1">
           <div>
             <label for="nombre"> Nombre: </label>
-            <input id="nombre" type="text" placeholder="Introduce tu nombre" />
+            <input
+              id="nombre"
+              type="text"
+              placeholder="Introduce tu nombre"
+              required
+            />
           </div>
 
           <div>
             <label for="email"> Correo electronico: </label>
-            <input id="email" type="email" placeholder="Introduce tu email" />
+            <input
+              id="email"
+              type="email"
+              placeholder="Introduce tu email"
+              required
+            />
           </div>
 
           <div>
@@ -51,6 +61,7 @@
               id="apellido"
               type="text"
               placeholder="Introduce tu apellido"
+              required
             />
           </div>
 
@@ -60,16 +71,17 @@
               id="fechaNacimiento"
               type="date"
               placeholder="Introduce tu fecha de Nacimiento"
+              required
             />
           </div>
         </div>
 
-        <h3>Escribe tu opinion sobre:</h3>
+        <h3><u>Escribe tu opinion sobre:</u></h3>
         <div class="conteiner2">
           <div>
             <p>¿ Cual de las 3 páginas te ha gustado menos ?</p>
 
-            <select name="pagina" id="pagina">
+            <select name="pagina" id="pagina" required>
               <option value="" selected>Elige una página</option>
               <option value="">Pagina principal ProgrAmiga</option>
               <option value="">Página con enlaces de videos</option>
@@ -79,27 +91,48 @@
           </div>
           <div>
             <p>¿ Que te ha parecido la página ?</p>
-
-            <input type="radio" name="opinionCliente" id="valoracion" />
-            <label for="valoracion">
-              <img src="" alt="" /> Impresionante, de donde has salido
-              tu?</label
+            <input
+              type="radio"
+              name="opinionCliente"
+              id="valoracion"
+              required
+            />
+            <label class="text" for="valoracion">
+              <img src="/formulario/src/icono-impre.png" alt="" />
+              Impresionante, de donde has salido tu?</label
             >
             <br />
-            <input type="radio" name="opinionCliente" id="valoracion" />
-            <label for="valoracion">
-              <img src="" alt="" /> Para el nivel que tienes no esta mal, pero
-              no te relajes
+            <input
+              type="radio"
+              name="opinionCliente"
+              id="valoracion"
+              required
+            />
+            <label class="text" for="valoracion">
+              <img src="/formulario/src/icono-giño.png" alt="" /> Para el nivel
+              que tienes no esta mal, ¡ Pero no te relajes!
             </label>
             <br />
-            <input type="radio" name="opinionCliente" id="valoracion" />
-            <label for="valoracion">
-              <img src="" alt="" /> Buena, aunque se puede mejorar</label
+            <input
+              type="radio"
+              name="opinionCliente"
+              id="valoracion"
+              required
+            />
+            <label class="text" for="valoracion">
+              <img src="/formulario/src/icono-mejorar.png" alt="" /> Buena,
+              aunque se puede mejorar</label
             >
             <br />
-            <input type="radio" name="opinionCliente" id="valoracion" />
-            <label for="valoracion">
-              <img src="" alt="" /> Da pena, sigue intentandolo anda</label
+            <input
+              type="radio"
+              name="opinionCliente"
+              id="valoracion"
+              required
+            />
+            <label class="text" for="valoracion">
+              <img src="/formulario/src/icono-pena.png" alt="" /> Da pena, sigue
+              intentandolo anda</label
             >
             <br />
           </div>
@@ -107,7 +140,7 @@
           <div>
             <p>¿ Cual de las 3 páginas te ha gustado más ?</p>
 
-            <select name="pagina" id="pagina">
+            <select name="pagina" id="pagina" required>
               <option value="" selected>Elige una página</option>
               <option value="">Pagina principal ProgrAmiga</option>
               <option value="">Página con enlaces de videos</option>
@@ -116,27 +149,23 @@
             </select>
           </div>
           <div>
-            <label for="textarea">
-              Me gustaría mejorar, por favor deja tus comentarios o sugerencias
-              y las valoraremos en cuanto podamos.
+            <label for="textarea" class="textArea">
+              Me gustaría mejorar :
             </label>
-            <br />
             <textarea
               name="comentario-textarea"
               id="textarea"
-              cols="30"
-              rows="10"
+              cols="55"
+              rows="8"
+              placeholder="Por favor deja tus comentarios o sugerencias y las valoraremos en cuanto podamos.
+¡ Muchas Gracias !"
+              required
             ></textarea>
           </div>
         </div>
 
         <div class="button">
           <button type="submit">Enviar</button>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          Muchas gracias, tu opinión cuenta !
         </div>
       </form>
     </main>
@@ -145,11 +174,11 @@
       <div>
         <a href="https://github.com/albapanato"
           ><img
-            src="src/formulario/github.gif"
+            src="/formulario/src/discord.gif"
             alt="https://iconos8.es/icon/akG4VRhAoSii/github"
             title="icono github"
           /><img
-            src="src/formulario/github.png"
+            src="/formulario/src/discord.png"
             alt="https://iconos8.es/icon/akG4VRhAoSii/github"
             title="icono github"
           />
@@ -158,12 +187,12 @@
       <div>
         <a href="https://discord.com/channels/@alba144">
           <img
-            src="src/formulario/discord.gif"
+            src="/formulario/src/github.gif"
             alt="https://iconos8.es/icons/set/discord--animated"
             title="icono discord"
           />
           <img
-            src="src/formulario/discord.png"
+            src="/formulario/src/github.png"
             alt="https://iconos8.es/icons/set/discord--animated"
             title="icono discord"
           />

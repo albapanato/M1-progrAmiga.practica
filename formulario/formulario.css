@@ -1,0 +1,151 @@
+* {
+  font-family: "Coustard", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(44, 97, 119);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1 {
+  padding: 10px;
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 45px;
+  color: rgb(94, 166, 94);
+  text-shadow: 6px 8px 4px rgb(21, 22, 22);
+  display: grid;
+  justify-content: center;
+}
+
+main > section.container > div {
+  font-size: 18px;
+  color: rgb(94, 166, 94);
+  text-shadow: 2px 2px 4px rgb(39, 43, 41);
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin: auto;
+  width: 700px;
+}
+
+form {
+  border: 6px solid rgb(94, 166, 94);
+
+  border-radius: 10px;
+  width: 1000px;
+  margin: auto;
+}
+
+form > div.container1 {
+  width: 940px;
+  max-width: 90%;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: auto;
+}
+
+form > div.container1 > div {
+  padding: 10px;
+}
+form > div.conteiner2 {
+  font-size: 20px;
+  border: 5px dashed rgb(94, 166, 94);
+  width: 900px;
+  max-width: 90%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+div.container1 > div > input {
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 2px 6px 4px;
+  padding: 10px;
+}
+
+label {
+  color: aliceblue;
+  font-size: 18px;
+  padding: 5px;
+  text-shadow: 6px 8px 4px rgb(11, 9, 9);
+}
+select {
+  font-size: 16px;
+
+  color: aliceblue;
+  margin-top: 30px;
+}
+h3 > u {
+  padding: 20px;
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(94, 166, 94);
+  text-shadow: 2px 2px 8px rgb(64, 66, 65);
+  font-size: 40px;
+  display: grid;
+  justify-content: center;
+}
+
+form > div.conteiner2 > div {
+  margin: 25px;
+}
+
+p {
+  font-family: "Coustard", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(94, 166, 94);
+  text-shadow: 2px 2px 8px rgb(64, 66, 65);
+  font-size: 18px;
+  margin: 0;
+}
+
+label.textArea {
+  font-family: "Coustard", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(94, 166, 94);
+  text-shadow: 2px 2px 8px rgb(64, 66, 65);
+  font-size: 18px;
+}
+
+textarea {
+  margin-top: 25px;
+}
+
+div > label.text {
+  font-size: 16px;
+  text-shadow: 2px 6px 8px rgb(38, 91, 65);
+}
+
+img {
+  width: 40px;
+}
+
+.button {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 20px;
+  width: 200px;
+  max-width: 90%;
+  border-radius: 10px;
+  background-color: rgb(94, 166, 94);
+  box-shadow: 4px 8px 32px rgb(13, 20, 17);
+}
