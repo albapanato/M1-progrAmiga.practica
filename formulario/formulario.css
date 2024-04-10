@@ -133,6 +133,7 @@ div > label.text {
 
 img {
   width: 40px;
+  margin-right: 10px;
 }
 
 .button {
@@ -148,4 +149,10 @@ button {
   border-radius: 10px;
   background-color: rgb(94, 166, 94);
   box-shadow: 4px 8px 32px rgb(13, 20, 17);
+}
+
+.radio-option,
+.radio-option-content {
+  display: flex;
+  align-items: center;
 }
