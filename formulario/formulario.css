@@ -75,9 +75,9 @@ form > div.conteiner2 {
   font-size: 20px;
   border: 5px dashed rgb(225, 236, 225);
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 5%;
+  column-gap: 100px;
   border-radius: 10px;
   margin: auto;
   margin: 100px;
