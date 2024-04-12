@@ -26,51 +26,58 @@
       <section class="container">
         <div>
           Si ya has echado un vistazo a las páginas que he creado de :
-          <a href="index.html"> ProgrAmiga </a>
-          <a href="videos.html"> Videos de como aprender a programar </a>
-          <a href="apuntes.html"> Apuntes markdown </a>
+          <a href="/Modulo_1-Unidad_4/index/index.html"> ProgrAmiga </a>
+          <a href="/Modulo_1-Unidad_4/videos/videos.html">
+            Videos de como aprender a programar
+          </a>
+          <a href="/Modulo_1-Unidad_4/apuntes/apuntes.html">
+            Apuntes markdown
+          </a>
           Agradeceria que completaras este formulario con algun comentario o
           sugerencias sobre tu opinion.
         </div>
       </section>
-      <form action="noserellenarestaparte.php" method="post">
+      <form action="aunporaprender.php" method="get">
         <div class="container1">
           <div>
-            <label for="nombre"> Nombre: </label>
+            <label for="input-1"> Nombre: </label>
             <input
-              id="nombre"
+              id="input-1"
               type="text"
               placeholder="Introduce tu nombre"
+              name="Nombre"
               required
             />
           </div>
 
           <div>
-            <label for="email"> Correo electronico: </label>
+            <label for="input-2"> Apellidos: </label>
             <input
-              id="email"
+              id="input-2"
+              type="text"
+              placeholder="Introduce tu apellido"
+              name="Apellido"
+              required
+            />
+          </div>
+          <div>
+            <label for="input-3"> Correo electronico: </label>
+            <input
+              id="input-3"
               type="email"
               placeholder="Introduce tu email"
               required
+              name="Email"
             />
           </div>
 
           <div>
-            <label for="apellido"> Apellidos: </label>
+            <label for="input-4"> Hoy es:</label>
             <input
-              id="apellido"
-              type="text"
-              placeholder="Introduce tu apellido"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="fechaNacimiento"> Fecha de nacimiento: </label>
-            <input
-              id="fechaNacimiento"
+              id="input-4"
               type="date"
               placeholder="Introduce tu fecha de Nacimiento"
+              name="Fecha-de-nacimiento"
               required
             />
           </div>
@@ -79,14 +86,20 @@
         <h3><u>Escribe tu opinion sobre:</u></h3>
         <div class="conteiner2">
           <div>
-            <p>¿ Cual de las 3 páginas te ha gustado menos ?</p>
+            <label for="pagina-">
+              <p>¿ Cual de las 3 páginas te ha gustado menos ?</p></label
+            >
 
-            <select name="pagina" id="pagina" required>
+            <select name="ha-gustado-menos" id="pagina-" required>
               <option value="" selected>Elige una página</option>
-              <option value="">Pagina principal ProgrAmiga</option>
-              <option value="">Página con enlaces de videos</option>
-              <option value="">Página con zip Markdown</option>
-              <option value="">Todas estan bien</option>
+              <option value="Pagina-principal-ProgrAmiga">
+                Pagina principal ProgrAmiga
+              </option>
+              <option value="Página-videos">
+                Página con enlaces de videos
+              </option>
+              <option value="Página-Markdown">Página con zip Markdown</option>
+              <option value="Todas-ok">Todas estan bien</option>
             </select>
           </div>
           <div>
@@ -95,13 +108,18 @@
             <div class="radio-option">
               <input
                 type="radio"
-                name="opinionCliente"
-                id="valoracion"
+                name="¿Que-te-ha-parecido-la-página?"
+                id="valoracion1"
+                value="Impresionante-de-donde-has-salido-tu?"
                 required
               />
-              <label class="text" for="valoracion">
+              <label class="text" for="valoracion1">
                 <div class="radio-option-content">
-                  <img src="/formulario/src/icono-impre.png" alt="" />
+                  <img
+                    src="src/icono-impre.png"
+                    alt="emoji impresionado"
+                    title="emoji con cara de impresionado"
+                  />
                   Impresionante, de donde has salido tu?
                 </div>
               </label>
@@ -110,29 +128,40 @@
             <div class="radio-option">
               <input
                 type="radio"
-                name="opinionCliente"
-                id="valoracion"
+                name="¿Que-te-ha-parecido-la-página?"
+                id="valoracion2"
+                value="Para-el-nivel-que-tienes-no-esta-mal-no-te-relajes"
                 required
               />
-              <label class="text" for="valoracion">
+              <label class="text" for="valoracion2">
                 <div class="radio-option-content">
-                  <img src="/formulario/src/icono-giño.png" alt="" /> Para el
-                  nivel que tienes no esta mal, ¡ Pero no te relajes!
+                  <img
+                    src="src/icono-giño.png"
+                    alt="emoji giñando"
+                    title="emoji giñando un ojo"
+                  />
+                  Para el nivel que tienes no esta mal,<br />¡Pero no te
+                  relajes!
                 </div>
               </label>
             </div>
             <div class="radio-option">
               <input
                 type="radio"
-                name="opinionCliente"
-                id="valoracion"
+                name="¿Que-te-ha-parecido-la-página?"
+                id="valoracion3"
+                value="Buena-aunque-se-puede-mejorar"
                 required
               />
 
-              <label class="text" for="valoracion">
+              <label class="text" for="valoracion3">
                 <div class="radio-option-content">
-                  <img src="/formulario/src/icono-mejorar.png" alt="" /> Buena,
-                  aunque se puede mejorar
+                  <img
+                    src="src/icono-mejorar.png"
+                    alt="emoji labio en onda"
+                    title="emoji con boca en onda"
+                  />
+                  Buena, aunque se puede mejorar
                 </div></label
               >
             </div>
@@ -140,14 +169,20 @@
             <div class="radio-option">
               <input
                 type="radio"
-                name="opinionCliente"
-                id="valoracion"
+                name="¿Que-te-ha-parecido-la-página?"
+                id="valoracion4"
+                value="Da-pena,
+                sigue-intentandolo-anda"
                 required
               />
-              <label class="text" for="valoracion">
+              <label class="text" for="valoracion4">
                 <div class="radio-option-content">
-                  <img src="/formulario/src/icono-pena.png" alt="" /> Da pena,
-                  sigue intentandolo anda
+                  <img
+                    src="src/icono-pena.png"
+                    alt="emoji vomitando"
+                    title="emoji cara verde a punto de vomitar"
+                  />
+                  Da pena, sigue intentandolo anda
                 </div></label
               >
             </div>
@@ -156,23 +191,29 @@
           <div>
             <p>¿ Cual de las 3 páginas te ha gustado más ?</p>
 
-            <select name="pagina" id="pagina" required>
+            <select name="ha-gustado+" id="pagina" required>
               <option value="" selected>Elige una página</option>
-              <option value="">Pagina principal ProgrAmiga</option>
-              <option value="">Página con enlaces de videos</option>
-              <option value="">Página con zip Markdown</option>
-              <option value="">Ninguna</option>
+              <option value="Pagina-ProgrAmiga">
+                Pagina principal ProgrAmiga
+              </option>
+              <option value="Página-videos">
+                Página con enlaces de videos
+              </option>
+              <option value="Página-Markdown">Página con zip Markdown</option>
+              <option value="Ninguna">Ninguna</option>
             </select>
           </div>
           <div>
-            <label for="textarea" class="textArea">
-              Me gustaría mejorar :
-            </label>
+            <div>
+              <label for="textarea" class="textArea">
+                Me gustaría mejorar :
+              </label>
+            </div>
             <textarea
               name="comentario-textarea"
               id="textarea"
-              cols="55"
-              rows="8"
+              cols="25"
+              rows="5"
               placeholder="Por favor deja tus comentarios o sugerencias y las valoraremos en cuanto podamos.
 ¡ Muchas Gracias !"
               required
@@ -187,32 +228,35 @@
     </main>
 
     <footer>
-      <div>
-        <a href="https://github.com/albapanato"
-          ><img
-            src="/formulario/src/discord.gif"
-            alt="https://iconos8.es/icon/akG4VRhAoSii/github"
-            title="icono github"
-          /><img
-            src="/formulario/src/discord.png"
-            alt="https://iconos8.es/icon/akG4VRhAoSii/github"
-            title="icono github"
-          />
-        </a>
-      </div>
-      <div>
-        <a href="https://discord.com/channels/@alba144">
-          <img
-            src="/formulario/src/github.gif"
-            alt="https://iconos8.es/icons/set/discord--animated"
-            title="icono discord"
-          />
-          <img
-            src="/formulario/src/github.png"
-            alt="https://iconos8.es/icons/set/discord--animated"
-            title="icono discord"
-          />
-        </a>
+      <div class="contact">
+        Alba Panato Alegre
+        <div class="contact">
+          <a class="icons" href="https://github.com/albapanato"
+            ><img
+              src="src/discord.gif"
+              alt="https://iconos8.es/icon/akG4VRhAoSii/github"
+              title="Ir a perfil de Alba en discord"
+            /><img
+              src="src/discord.png"
+              alt="https://iconos8.es/icon/akG4VRhAoSii/github"
+              title="Ir a perfil de Alba en discord"
+            />
+          </a>
+        </div>
+        <div class="contact">
+          <a class="icons" href="https://discord.com/channels/@alba144">
+            <img
+              src="src/github.gif"
+              alt="https://iconos8.es/icons/set/discord--animated"
+              title="Ir a perfil de Alba en github"
+            />
+            <img
+              src="src/github.png"
+              alt="https://iconos8.es/icons/set/discord--animated"
+              title="Ir a perfil de Alba en github"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
